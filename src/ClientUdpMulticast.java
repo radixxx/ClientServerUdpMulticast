@@ -12,7 +12,7 @@ public class ClientUdpMulticast {
 
 
     public static void main(String arg[]) throws Exception {
-        System.out.println("Ожидание сообщения от сервера");
+        System.out.println("Waiting for a message from the server");
         try {
 // Создание объекта MulticastSocket для получения
 // данных от группы, используя номер порта 1502
@@ -27,7 +27,7 @@ public class ClientUdpMulticast {
                 //Получение данных от сервера
                 socket.receive(packet);
                 str = new String(packet.getData());
-                System.out.println("Полученно сообщение: " + str.trim());
+                System.out.println("Received message: " + str.trim());
             }
         }catch (Exception e){
             e.printStackTrace();

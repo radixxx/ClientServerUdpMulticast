@@ -31,7 +31,7 @@ public class ServerUdpMulticast {
             in = new BufferedReader(new InputStreamReader(System.in));
 
             while (true) {
-                System.out.println("Введите строку для передачи клиентам: ");
+                System.out.println("Enter the string to send to clients: ");
                 str = in.readLine();
                 buffer = str.getBytes();
                 address = InetAddress.getByName("233.0.0.1");
